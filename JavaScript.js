@@ -63,7 +63,41 @@ function empty(){
     console.log("hii this is mukesh ullo");
     return 'studentii';
 }
-
 let v=empty();
-console.log(v)
+console.log(v);
 
+
+
+// loops and functions
+// using for loops
+let marks={
+    suneeta: 30,
+    aneeeta: 40,
+    subham:  20,
+    kaninaat:40,
+}
+for(let i=0; i<Object.keys(marks).length; i++){
+    console.log("The marks of",Object.keys(marks)[i],"is: ",marks[Object.keys(marks)[i]]);
+}
+
+
+
+
+// for in looops simple program
+let marks={
+    suneeta: 30,
+    aneeeta: 40,
+    subham:  20,
+    kaninaat:40,
+}
+for(let key in marks){
+    console.log(key,":", marks[key]);
+}
+
+
+
+// mean of a 5 numbers
+const mean=(a,b,c,d,e)=>{
+    return Math.round((a+b+c+d+e)/5);
+}
+console.log("The mean of five numbers is:",mean(4,5,6,7,9));
