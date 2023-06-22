@@ -101,3 +101,46 @@ const mean=(a,b,c,d,e)=>{
     return Math.round((a+b+c+d+e)/5);
 }
 console.log("The mean of five numbers is:",mean(4,5,6,7,9));
+
+
+// template literals 
+// template literals use backtics instead of double quote or single quote in string
+//  what is backtics ?? 
+// ` ` this is called backticks 
+// syntyx  for backtics in string ${string variable}
+// string interpolation ${variable name}
+let girl1 = 'Mira Morati';
+let girl2 = 'Kamla Haris';
+let sentence =`${girl1} is a Co-member of ${girl2}`;
+console.log(sentence);
+
+// Escap sequence characters
+
+let fruit='ora\'nge';
+console.log(fruit);
+let fruits='app\"le';
+console.log(fruits);
+
+let mk='Engi\nneer'
+console.log(mk);
+let mk2='English\rbook'
+console.log(mk2)
+
+
+
+
+// string methods 
+let boy ='Mukesh';
+console.log(boy.length);
+// .length is properties not a method 
+console.log(boy.slice(2));
+console.log(boy.slice(1,4)); //it will skip 4 index and upto but not skip 1 index
+console.log(boy.replace('Muk','rake'));
+console.log(boy.toLocaleLowerCase())
+console.log(boy.toUpperCase())
+let boy1='   kumar  ';
+console.log(boy1)
+console.log(boy1.trim());
+console.log(boy.concat(' kumar', ' utmani'));
+console.log(boy.indexOf('h'));
+
