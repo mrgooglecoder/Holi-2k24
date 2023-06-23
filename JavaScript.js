@@ -218,3 +218,35 @@ for(let i=0; i<arr.length; i++){
 // for(let a in arr[6]){
 //     console.log(a)
 // }
+
+
+
+
+
+// lecture no 17
+//  convert object type array into string
+let arr=[33,5, 6,7,90];
+let b=arr.toString();
+console.log(arr, typeof arr);
+console.log(b , typeof b);
+let c=console.log( arr.join('___'));
+// console.log(c)
+let pop =console.log(arr, arr.pop());
+
+let push =arr.push(78,98);
+console.log(arr,push);
+
+// shift method remove value first index of array
+let shift= arr.shift();
+console.log(arr , shift);
+
+// unshift method add value first index of array
+let unshift= arr.unshift(900)
+console.log(arr)
+
+
+// concatenation in array
+let a1=[3,4,5]
+let a2=[56,78]
+let a3=[100,200,300]
+console.log(a1.concat(a2,a3))
