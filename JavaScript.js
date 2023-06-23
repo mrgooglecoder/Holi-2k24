@@ -144,3 +144,52 @@ console.log(boy1.trim());
 console.log(boy.concat(' kumar', ' utmani'));
 console.log(boy.indexOf('h'));
 
+
+
+// problems solving 
+// Ques No1
+let str ='mukes\"';
+console.log(str.length);
+
+/*Ques No2
+  Include string function |use template literal| */
+let sentence ='I have hp company laptop';
+let word ='hp';
+console.log(`The word ${word} ${sentence.includes(word)? 'is':'is not'} 'include in this senctence'`)
+
+let sentence2='Is ocean gate ship  will be find in future';
+let find='ocean'
+let find2='ship';
+console.log(sentence2.includes(find2))
+console.log(`The words ${find} 'and' ${find2} ${sentence2.includes(find)?'is':'is not'} 'include in this sentences'`);
+
+//  using starts with and ends with function in string 
+const str1 = 'Saturday night plans';
+console.log(str1.startsWith('Sat'));
+// Expected output: true
+console.log(str1.startsWith('Sat', 0));
+// Expected output: false
+console.log(str1.endsWith('ans',20));
+
+// problem #3
+let str3='KUNAL VASHODEV';
+console.log(str3.toLowerCase());
+
+
+// problem no #4
+// remove the string and print a number by using slice string function
+let str4='please gives me 2000';
+let amount=str4.slice(16);
+console.log(amount);
+console.log(typeof amount)
+
+let str5='please gives me 2000';
+let amount1= Number.parseInt(str4.slice(16));
+console.log(amount1);
+console.log(typeof amount1)
+
+
+// problem no#5
+let friend ='Katrina kaif';
+friend[6]='y';
+console.log(friend);   // we cant change exiting string that we declare beacuse its immuetable 
