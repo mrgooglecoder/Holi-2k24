@@ -193,3 +193,28 @@ console.log(typeof amount1)
 let friend ='Katrina kaif';
 friend[6]='y';
 console.log(friend);   // we cant change exiting string that we declare beacuse its immuetable 
+
+
+// array is muteable beacuse it can be changed 
+let arr=[91,83,67,56,99];
+console.log(arr);
+console.log("The kength of array is:"+arr.length);
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+console.log(arr[3]);
+console.log(arr[4]);
+arr[5]=98;
+arr[6]=0;
+arr[7]='null';
+arr[8]='mukesh'
+console.log(arr[5]);
+console.log(arr)
+
+// by using looop
+for(let i=0; i<arr.length; i++){
+    console.log(arr[i]);
+}
+// for(let a in arr[6]){
+//     console.log(a)
+// }
