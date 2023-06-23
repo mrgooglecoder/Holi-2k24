@@ -250,3 +250,45 @@ let a1=[3,4,5]
 let a2=[56,78]
 let a3=[100,200,300]
 console.log(a1.concat(a2,a3))
+
+
+
+
+// by using delete operator
+let num=[1,2,34,5,56,7,8,9];
+delete num[3];
+console.log(num.length, num);
+
+// sort method 
+let arr=[34,5,6,23,87,900,45,789];
+// this method sort out the arrays elements with string
+arr.sort();
+console.log(arr)
+
+
+let compare=(a,b)=>{
+    // b-a for decending
+    // a-b for assending
+    return b-a
+}
+let arr1=[34,5,6,23,87,900,45,789];
+
+// this method sort out the arrays elements with string
+arr.sort(compare);
+console.log(arr)
+console.log(arr1.reverse());
+
+
+// splice method is very important
+
+let arr2=[34,5,6,23,87,900,4,789];
+console.log(arr2.splice(3,4,456,78,877,90))
+console.log(arr2)
+
+
+let arr3=[34,5,6,23,87,900,4,789];
+let num5=arr3.slice(2,5);
+console.log(num5)
+ console.log(arr3.slice(2,7))
+
+
