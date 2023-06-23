@@ -291,4 +291,29 @@ let num5=arr3.slice(2,5);
 console.log(num5)
  console.log(arr3.slice(2,7))
 
+// for each looop
+let arr=[3,4,5,67,87,7];
+arr.forEach((num)=> {
+console.log(num*num)
+})
 
+// Array.from loops convert string into arrays or html collection arrays
+
+let word='template';
+let arr2 =Array.from(word);
+console.log(arr2);
+
+
+let nam='mukesh kumar';
+console.log(Array.from(nam))
+
+// for of and fir in 
+// its a short method to access arrays items 
+for(let i of arr){
+    console.log(i);
+}
+
+// for in loop mostly used for to print the  keys 
+for (let j in arr){
+    console.log(j)
+}
