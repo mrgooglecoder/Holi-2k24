@@ -376,9 +376,70 @@ let val=arr7.reduce(f1)
 console.log(val);
 
 
+// Code#21 problems
+// prob#1 push a number in array 
+let arr=[3,4,5,6,5,9]
+let a=prompt('Enter a item of array');
+a=Number.parseInt(a);
+console.log(typeof a)
+arr.push(a);
+console.log(arr);
+
+// prob#2 
+//  using do while loop
+let arr2=[2,34,4,5];
+let c; 
+do  {
+    b=prompt('enter a numbers');
+    c=Number.parseInt(c);
+    arr2.push(c);
+} while(c!=0);
+ console.log(arr2);
+
+// while loop
+ let arr3=[2,34,4,5];
+ let b1;
+ while(b1!=0) {
+     arr3.push(b1);
+     b1=prompt('enter a numbers');
+     b1=Number.parseInt(b1);
+} 
+ console.log(arr3);
 
 
-// Code No#21
+
+// prob#3 divisible by 10
+let arr4 =[40,5,76,89,20,30];
+let b=arr4.filter((x1)=>{
+    return x1%10==0;
+})
+console.log(b,arr4)
+
+// problem no#4
+let arr5 =[40,5,76,89,20,30];
+let b2=arr.filter((x)=>{
+    return x%10==0;
+})
+console.log(b,arr)
+let arr6 =[40,5,76,89,20,30];
+let b3=arr.map((x)=>{
+    return x*x;
+})
+console.log(b,arr6)
+
+
+let arr7 =[1,2,3,4,5];
+let b7=arr.reduce((x1,x2)=>{
+    return x1*x2;
+})
+console.log(b,arr7)
+
+
+
+
+
+
+// Code No#22
 // Guess_Number Game 
 
 let Guess_Number;
