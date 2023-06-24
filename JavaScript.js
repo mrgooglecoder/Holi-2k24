@@ -317,3 +317,60 @@ for(let i of arr){
 for (let j in arr){
     console.log(j)
 }
+
+
+
+// CodeNo20
+// high order array method -----> map ,filter ,reduce 
+// map-- where we use to make a new array by using operation 
+// for each loop-- used for operation in exiting arrays 
+
+let arr3 = [1, 2, 3, 4, 5];
+arr3.forEach((num) => {
+    console.log(num * 4);
+})
+
+
+// let a = arr3.map((value) => {
+//     console.log(value)
+//     return value * 5
+//     // return value+7;
+// })
+// console.log(a)
+
+// array map method
+let a=arr3.map((value,index, array)=>{
+    console.log(value,index,array)
+    return value*index+array
+})
+console.log(a);
+
+// filter method
+let arr5=[34,56,77,89,90,100];
+let a2=arr5.filter((v)=>{
+    console.log(v)
+    return v<50
+})
+console.log(a2)
+console.log(arr5)
+
+
+//Array  reduce method
+
+let arr6=[4,5,6,7,8,9]
+let d=arr6.reduce((muk1,muk2)=>{
+    return muk1*muk2;
+})
+console.log(d);
+
+// let arr7=[3let e=arr7.reduce((mk1,mk2,mk3)=>{
+//       return mk1+mk2+mk3;
+// }),4,67,89,10];
+
+
+const f1=(a1,a2)=>{
+  return a1+a2
+}
+let arr7=[3,4,5,6,7,8]
+let val=arr7.reduce(f1)
+console.log(val);
