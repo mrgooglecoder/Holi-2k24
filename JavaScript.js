@@ -374,3 +374,31 @@ const f1=(a1,a2)=>{
 let arr7=[3,4,5,6,7,8]
 let val=arr7.reduce(f1)
 console.log(val);
+
+
+
+
+// Code No#21
+// Guess_Number Game 
+
+let Guess_Number;
+let Random;
+
+do {
+    Random = Math.floor(Math.random() * 100);
+    Guess_Number = prompt('Enter your number');
+    Guess_Number = Number.parseInt(Guess_Number);
+
+    if (Random > Guess_Number) {
+        console.log(" Random Number", Random, "is greater than Guess Number!", Guess_Number, "Sorry try Again ")
+    }
+    else if (Random < Guess_Number) {
+        console.log("Random Number", Random, " is less than Guess Number", Guess_Number, " try again")
+    }
+}  while(Random!=Guess_Number)
+// else if (Random == Guess_Number) {
+    console.log("You Guess right Number", Random, "==", Guess_Number)
+// }
+
+
+
