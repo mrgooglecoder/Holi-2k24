@@ -493,3 +493,18 @@ while(i<7){
 console.timeEnd('whileLoop')
 
 
+
+
+code##27
+let a=prompt('enter a number ',876)
+document.write(a);
+a=Number.parseInt(a);
+alert('you enteered a typed of '+(typeof a));
+
+let write=confirm("do you allow me to write on the code");
+if(write){
+    document.write(a)
+}
+else{
+    document.write("allow me to write on the page")
+}
