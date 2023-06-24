@@ -462,4 +462,34 @@ do {
 // }
 
 
+/ Console Object
+// code25
+console.log(console)
+console.error("Hi this is mukesh")
+ console.assert(77>456)
+console.assert(777>456)
+// console.clear();
+obj={a1:3, a2:5, a3:7, a4:9, a5:8}
+console.table(obj);
+console.warn("Hey dont drink soda")
+console.info('This is my laptop')
+console.time('a');
+console.timeEnd('a')
+
+
+console.time('forLoop')
+for(let i=0; i<6; i++){
+    console.log(i);
+}
+console.timeEnd('forLoop')
+
+
+console.time('whileLoop')
+let i=0;
+while(i<7){
+    console.log(i);
+    i++;
+}
+console.timeEnd('whileLoop')
+
 
