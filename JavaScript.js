@@ -508,3 +508,44 @@ if(write){
 else{
     document.write("allow me to write on the page")
 }
+
+
+
+// window object is a global object
+// Bom and DOM and java script core
+// BOM stand for Browser object module, DOM=document object module
+
+console.log(windows)
+console.log(document.body)
+document.body.style.background="red";
+
+// Problem no1 and 2 and 3
+const drive=(age)=>{
+    return age>=18?true:false;
+}
+let runagain=true;
+while(runagain){
+    let age=prompt('enter your age');
+    age=Number.parseInt(age)
+    if(age<0){
+        console.log('ERROR! please enter a valid age');
+    break;
+    }
+    if(drive(age)){
+        alert('you can drive')
+    }
+    else {
+        alert("you can not drive")
+    }
+    runagain=confirm('do you want to play again');
+}
+
+// problem no4
+let number=prompt('Enter your number');
+number=Number.parseInt(number);
+if(number>4){
+    location.href="https://google.com";
+}
+// problem no5
+let color=prompt('Enter your color');
+document.body.style.background=color
