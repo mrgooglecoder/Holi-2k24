@@ -549,3 +549,39 @@ if(number>4){
 // problem no5
 let color=prompt('Enter your color');
 document.body.style.background=color
+
+
+
+// SNAKE WATER GUN GAME
+let game=['snake','water','gun'];
+alert("you are playing snake water gun game");
+let round =0;
+let Guess_user=0;
+let Guess_computer=0;
+
+while(round<5){
+    let UserInput=prompt("Guess your one object");
+    let computerInput=game[Math.floor(Math.random()*3)];
+    console.log(computerInput)
+    if(UserInput=='gun' && computerInput=='snake'|| UserInput=='snake' && computerInput=='water' || UserInput=='water' && computerInput=='gun' ) {
+
+        Guess_user++;
+        
+    }
+    
+   else if (UserInput=='snake' && computerInput=='gun'|| UserInput=='water' && computerInput=='snake' || UserInput=='gun' && computerInput=='water') {
+       Guess_computer++;
+       console.log(Guess_computer)
+     } 
+   round++;
+}
+
+if(Guess_computer>Guess_user){
+    alert('Oppss! Sorry you losse game ')
+    console.log("computer win",Guess_computer, Guess_user)
+}
+
+else{
+    alert('Hurrah! My Hero win game')
+    console.log("User Win",Guess_user,Guess_computer)
+}
