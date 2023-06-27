@@ -585,3 +585,15 @@ else{
     alert('Hurrah! My Hero win game')
     console.log("User Win",Guess_user,Guess_computer)
 }
+
+const drive=(age)=>{
+    return age>=18?true:false;
+}
+let runagain=true;
+while(runagain){
+    let age=prompt('enter your age');
+    age=Number.parseInt(age)
+    if(age<0){
+        console.log('ERROR! please enter a valid age');
+    break;
+    }
