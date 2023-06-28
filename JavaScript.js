@@ -621,3 +621,28 @@ let arr=Array.from(document.body.childNodes)
 console.log(document.body.firstChild)
 a=document.body.firstChild
 console.log(a.firstChild.nextSibling )
+
+
+    const myColor=()=>{
+    document.body.firstElementChild.style.background="purple"
+}
+
+console.log(myColor())
+// document.body.firstElementChild.style.background="green"
+
+
+
+document.body
+console.log(document.body)
+a=document.body.firstChild
+console.log(document.body.firstChild)
+console.log(document.body.firstElementChild)
+
+let changeBodyred = () => {
+    document.body.firstElementChild.style.background = "red";
+  }
+  
+  // ... later in the code ...
+  changeBodyred = () => {
+    document.body.firstElementChild.style.background = "blue";
+  }
