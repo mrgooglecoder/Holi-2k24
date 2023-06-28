@@ -597,3 +597,27 @@ while(runagain){
         console.log('ERROR! please enter a valid age');
     break;
     }
+
+
+// walking the Dom
+// dom tree: nodes--> text node, element node, comment
+// dom tree: your html file convert into js object: now you can use as html file as a js object
+// point noted: auto correction
+
+console.log('mukesh')
+document.title
+typeof document.title
+typeof document.documentElement
+
+// if we write js before body tag then document.body return null
+// parents and child in html 
+// first child 2nd child 3rd child
+// descendent nodes
+
+document.body.firstChild
+document.body.parentElement
+document.body.children
+let arr=Array.from(document.body.childNodes)
+console.log(document.body.firstChild)
+a=document.body.firstChild
+console.log(a.firstChild.nextSibling )
