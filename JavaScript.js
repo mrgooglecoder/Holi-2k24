@@ -646,3 +646,11 @@ let changeBodyred = () => {
   changeBodyred = () => {
     document.body.firstElementChild.style.background = "blue";
   }
+
+// Table navigation bar 
+
+let tab=document.body.firstElementChild.firstElementChild
+console.log(tab)
+console.log(tab.rows)
+console.log(tab.columns)
+console.log(tab.caption)
