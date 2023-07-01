@@ -654,3 +654,13 @@ console.log(tab)
 console.log(tab.rows)
 console.log(tab.columns)
 console.log(tab.caption)
+
+
+
+let ctitle=document.getElementsByClassName('card-title')[0]
+let ctitle1=document.getElementsByClassName('card-text')[0]
+ctitle.style.color='red';
+ctitle1.style.color='green';
+
+    
+
