@@ -676,4 +676,29 @@ console.log(id1.contains(id1));
 console.log(sp1.contains(id1));
 console.log(id1.contains(id2));
 
+// practice Set Question of DOM
+document.getElementsByTagName('nav')[0].firstElementChild.style.color='red';
+document.getElementsByTagName('nav')[0].firstElementChild.style.color='green';
+document.getElementsByTagName('nav')[0].lastElementChild.style.color='green';
 
+Array.from(document.getElementsByTagName('li')).forEach((element)=>{
+   element.style.background='red'
+})
+
+
+ // CSS of this practice Questions 
+    html, body{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+ }
+*{   margin: 0;
+    padding: 0;  }
+nav{
+    display: flex;
+    background: rgb(223, 238, 12);
+}
+nav li{
+    list-style: none;
+    padding: 0px  23px;
+}
