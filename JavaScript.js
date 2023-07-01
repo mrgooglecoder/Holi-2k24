@@ -662,5 +662,18 @@ let ctitle1=document.getElementsByClassName('card-text')[0]
 ctitle.style.color='red';
 ctitle1.style.color='green';
 
-    
+
+// lec NO 37
+// Matches Closet And Contains
+
+// console.log(id1);  when using for only one browser
+let id1=document.getElementById('id1');
+console.log(id1);
+console.log(id1.matches('.box'))  //CSS selector
+console.log(sp1.closest('#sp1'));
+console.log(id1.contains(sp1));
+console.log(id1.contains(id1));
+console.log(sp1.contains(id1));
+console.log(id1.contains(id2));
+
 
