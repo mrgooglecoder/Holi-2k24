@@ -702,3 +702,24 @@ nav li{
     list-style: none;
     padding: 0px  23px;
 }
+
+
+
+// lecture No# 41
+// InnerHTml And Outer Html And their Properties
+console.log(document.getElementsByTagName('span')[0])
+console.dir(document.getElementsByTagName('span')[0])
+console.log(document.body.firstChild.nodeName)
+console.log(document.body.firstElementChild.nodeName)
+// first.innerHTML;
+console.log(first.innerHTML);
+first.innerHTML= "<i> This is my case </i>"
+console.log(first.innerHTML);
+
+console.log(document.body.textContent)
+$0.hidden=false;
+    
+html of LecNo #41
+<span id="first" > <b>Hey I am Span45 </b></span>
+    <span id="2nd" hidden>Hey I am Span</span>
+    <script src="Document.js"></script>
