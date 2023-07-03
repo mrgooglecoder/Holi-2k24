@@ -742,3 +742,21 @@ console.log(first.attributes)
 console.log(first.dataset)
 console.log(first.dataset.game)
 console.log(first.dataset.player)
+
+    
+
+// Html Insertion Method 
+    i am end of this conatiner (outer)
+    <div class="container">
+        <div id="first"> I am a first element </div>
+    </div>
+    i am end of this conatiner (outer)
+let a =document.getElementsByTagName('div')[0];
+// a.innerHTML=a.innerHTML+ '<h1> Mueksh Utmani </h1>'
+let div =document.createElement('div')
+div.innerHTML='<h1> Hello world</h1>'
+// a.appendChild(div)
+// a.append(div);
+a.prepend(div);
+
+
