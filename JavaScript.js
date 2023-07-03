@@ -759,4 +759,12 @@ div.innerHTML='<h1> Hello world</h1>'
 // a.append(div);
 a.prepend(div);
 
+/ Insert Adjacent Elements/TExt/Html
+
+<div id="div"> Div is id</div>
+first.insertAdjacentHTML('beforeend','<div>beforeend</div>');
+first.insertAdjacentHTML('beforebegin','<div class="test">beforebegin</div>');
+div.insertAdjacentHTML('afterend','<div class="test">afterend</div>');
+div.insertAdjacentHTML('afterbegin','<div class="test">aftebegin</div>');
+div.remove();
 
