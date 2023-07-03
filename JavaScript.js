@@ -723,3 +723,22 @@ html of LecNo #41
 <span id="first" > <b>Hey I am Span45 </b></span>
     <span id="2nd" hidden>Hey I am Span</span>
     <script src="Document.js"></script>
+
+
+// HTML attributes and its method
+ <div id="first"  class="hey" data-game="mario" data-player="Awish"> Hey i am first container 
+</div>
+// Lectures No43
+let first=document.getElementById('first');
+console.log(first)
+let a =first.getAttribute("class")
+console.log(a)
+console.log(first.hasAttribute('class'))
+console.log(first.hasAttribute('style'))
+first.setAttribute('class','Mukesh Utmani' )
+first.removeAttribute('id')
+first.removeAttribute('class')
+console.log(first.attributes)
+console.log(first.dataset)
+console.log(first.dataset.game)
+console.log(first.dataset.player)
