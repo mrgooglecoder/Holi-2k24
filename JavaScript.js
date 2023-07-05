@@ -768,3 +768,4 @@ div.insertAdjacentHTML('afterend','<div class="test">afterend</div>');
 div.insertAdjacentHTML('afterbegin','<div class="test">aftebegin</div>');
 div.remove();
 first.innerHTML('beforeend' , <div> beforeend </div>
+div.remove();
