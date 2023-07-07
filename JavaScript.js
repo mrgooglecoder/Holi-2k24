@@ -769,3 +769,33 @@ div.insertAdjacentHTML('afterbegin','<div class="test">aftebegin</div>');
 div.remove();
 first.innerHTML('beforeend' , <div> beforeend </div>
 div.remove();
+
+
+// Code#46
+// setInterval and setTimeOut
+document.write('Thread .net ')
+
+let a=setTimeout(function(){
+    alert('Just testing timeOut Function')
+} , 5000)
+
+let b=prompt("do you want to run timeout")
+if('n'==b){
+    clearTimeout(a)
+}
+clearTimeout(a)
+console.log(a)
+// print 1 it is   timerId
+const sum=(a,b,c,d)=>{
+    console.log('yes i am runing', a+b+c+d)
+    a+b+c+d;
+    }
+setTimeout(sum,5000 ,1,2,3,6)
+const sum3=(a,b,c)=>{
+    document.write(a+b+c)
+}  setInterval(sum3,4000,2,3,4)
+
+// SetInterval
+setInterval(function(){
+    alert("set interval")
+},6000)
