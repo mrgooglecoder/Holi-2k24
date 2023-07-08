@@ -799,3 +799,9 @@ const sum3=(a,b,c)=>{
 setInterval(function(){
     alert("set interval")
 },6000)
+    
+let a=document.getElementsByClassName('conatiner')[0]
+ a.onclick=()=>{
+    let b=document.getElementsByClassName('container')[0]
+    b.innerHTML='hello world';
+ }
