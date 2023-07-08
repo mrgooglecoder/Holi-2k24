@@ -826,3 +826,24 @@ let a=prompt('Enter your number')
 if(a==2){
    btn.removeEventListener('click',y);
 }
+
+    
+// practice set Questions
+let a=document.getElementById('google').addEventListener("click", function(){
+    a.window.location= 'https://google.com';
+    win.focus();
+})
+document.getElementById('fb').addEventListener("click", function(){
+    window.location= 'https://facebook.com';
+    win.focus();
+    //  how to fetch the content 
+})
+setInterval( async function(){
+    let url='https://jsonplaceholder.typicode.com/todos/1'
+      console.log(await fetchContent(url))
+
+},3000)
+
+setInterval( async function(){
+    document.querySelector('#bulb').classList.toggle('bulb')
+}, 1000)
