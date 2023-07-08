@@ -847,3 +847,13 @@ setInterval( async function(){
 setInterval( async function(){
     document.querySelector('#bulb').classList.toggle('bulb')
 }, 1000)
+
+// clock for timing
+let a=new Date()
+let h=a.getHours()
+let m=a.getMinutes()
+let s=a.getSeconds()
+let d=a.getDate()
+let m1=a.getMonth()
+let y=a.getFullYear()
+document.write('Time ',h,':',m,":",s," Date ",d,"-",m1,"-",y)
