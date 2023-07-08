@@ -805,3 +805,24 @@ let a=document.getElementsByClassName('conatiner')[0]
     let b=document.getElementsByClassName('container')[0]
     b.innerHTML='hello world';
  }
+
+// code#48
+// Handling Broweser events
+// Event listner & and Event remove
+let x=function(e){
+    alert('hellloo')
+}
+btn.addEventListener('click',x)
+
+let y=function(e){
+    console.log(e.target)
+    console.log(e.type, e.clientX, e.clientY)
+    //  e is a event object // event object name can be changed 
+    alert('hellloo___2')
+}
+    
+btn.addEventListener('click', y)
+let a=prompt('Enter your number')
+if(a==2){
+   btn.removeEventListener('click',y);
+}
