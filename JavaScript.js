@@ -813,21 +813,17 @@ let x=function(e){
     alert('hellloo')
 }
 btn.addEventListener('click',x)
-
 let y=function(e){
     console.log(e.target)
     console.log(e.type, e.clientX, e.clientY)
     //  e is a event object // event object name can be changed 
     alert('hellloo___2')
-}
-    
+}  
 btn.addEventListener('click', y)
 let a=prompt('Enter your number')
 if(a==2){
    btn.removeEventListener('click',y);
-}
-
-    
+}    
 // practice set Questions
 let a=document.getElementById('google').addEventListener("click", function(){
     a.window.location= 'https://google.com';
@@ -864,3 +860,36 @@ let a=prompt('what is your name ');
 let b=prompt('your fav players ?')
 let c=prompt('your fav team ')
 console.log(a+' like to '+b+' in '+c+' team');
+
+
+// Callbacks
+function loadScript(src, callback) {
+  var script = document.createElement("script");
+  script.src = src;
+  script.onload = function() {
+    console.log("Loaded script with SRC: " + src)
+    callback(null, src);
+  }
+  script.onerror = function() {
+    console.log("Error loading script with SRC: " + src);
+    callback(new Error("Src got some error"))
+  }
+  document.body.appendChild(script);
+}
+function hello(error, src) {
+  if (error) {
+    console.log(error)
+    return
+  }
+  alert('Hello World!' + src);
+}
+function goodmorning(error, src) {
+  
+  if (error) {
+    console.log(error)
+    sendEmergencyMessageToCeo();
+    return
+  }
+  alert('Good morning' + src);
+}
+loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js", goodmorning) 
