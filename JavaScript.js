@@ -857,3 +857,10 @@ let d=a.getDate()
 let m1=a.getMonth()
 let y=a.getFullYear()
 document.write('Time ',h,':',m,":",s," Date ",d,"-",m1,"-",y)
+
+/ INTRODUCTION TO CALL-BACKS IN JAVA SCRIPT
+// Syncronous programming 
+let a=prompt('what is your name ');
+let b=prompt('your fav players ?')
+let c=prompt('your fav team ')
+console.log(a+' like to '+b+' in '+c+' team');
