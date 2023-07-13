@@ -871,7 +871,7 @@ function loadScript(src, callback) {
     callback(null, src);
   }
   script.onerror = function() {
-    console.log("Error loading script with SRC: " + src);
+    console.log("Error loading script with SRC of: " + src);
     callback(new Error("Src got some error"))
   }
   document.body.appendChild(script);
