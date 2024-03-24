@@ -1,0 +1,89 @@
+   
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+
+    .text h1{
+        
+        font-size: 6rem;
+        margin: 1rem auto;
+        animation: neon 1s ease infinite;
+        position: absolute;
+        left: 48%;
+        padding-top: 30px;
+        font-family: 'Brush Script MT', cursive;
+    }
+
+
+    @keyframes neon {
+
+    0%,
+    100% {
+        text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: #eda0d3;
+    }
+}
+
+
+
+
+    .image{
+        animation: img 5s infinite;
+    }
+    @keyframes img{
+        50%{
+            transform: translateX(-500px);
+          }
+    }
+
+   
+
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    h1 {
+        font-size: 4rem;
+        /* font-family: 'Brush Script MT', cursive; */
+        color: #b51010;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        z-index: 1;
+    }
+    .rainbow-text {
+        font-family: "Russo One", sans-serif;
+        font-size: 7rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        animation: rainbow 5s linear infinite alternate, shadow 2s linear infinite alternate;
+    }
+
+    @keyframes rainbow {
+        0% { color: #0e0000; }
+        16.67% { color: #1d0101; }
+        33.33% { color: #e52719; }
+        50% { color: #e30a0a; }
+        66.67% { color: #300302; }
+        83.33% { color: #00821c; }
+        100% { color: #65e22b; }
+    }
+
+    @keyframes shadow {
+        0%, 100% { text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+        50% { text-shadow: 2px 2px 10px rgba(255,255,255,0.8); }
+    }
